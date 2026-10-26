@@ -11,7 +11,7 @@ $conn = new mysqli($_host,$_user,$_password,$_db);
 
 // ตรวจสอบว่าการเชื่อมต่อสำเร็จหรือไม่
 if ($conn->connect_error) {
-    die("การเชื่อมต่อล้มเหลว:" . $con->connect_error);
+    die("การเชื่อมต่อล้มเหลว:" . $conn->connect_error);
 }
 
 //ตั้งค่าภาษาให้กับฐานข้อมูล เป็น utf8
